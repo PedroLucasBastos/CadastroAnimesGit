@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+   <children>
+      <ToolBar layoutX="100.0" layoutY="44.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1c2028;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <Button fx:id="btnIncluir" mnemonicParsing="false" onAction="#btnIncluirOnAction" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #2A2E37;" text="Incluir" textFill="#fcfcfc" />
+            <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#btnEditarOnAction" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #2A2E37;" text="Editar" textFill="#fcfcfc" />
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluirOnAction" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #2A2E37;" text="Excluir" textFill="#fcfcfc" />
+            <Label textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPesquisar" prefHeight="26.0" prefWidth="160.0" promptText="Pesquisar" style="-fx-background-color: #2A2E37; -fx-text-fill: white;" />
+            <Button fx:id="btnPesquisar" mnemonicParsing="false" onAction="#btnPesquisarOnAction" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #2A2E37; -fx-text-fill: white;" text="Pesquisar" textFill="#fcfcfc" />
+            <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#btnLimparOnAction" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #2A2E37;" text="Limpar" textFill="#fcfcfc">
+               <font>
+                  <Font name="Arial Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnPerfil" mnemonicParsing="false" onAction="#btnPerfilOnAction" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #2A2E37;" text="Perfil" textFill="#fcfcfc" />
+            <Button fx:id="btnEstatistica" mnemonicParsing="false" onAction="#btnEstatisticaOnAction" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #2A2E37;" text="Estatistica" textFill="#f5f5f5">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+        </items>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ToolBar>
+      <TableView fx:id="tblColecao" prefHeight="354.0" prefWidth="600.0" stylesheets="@../styles/Principal.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+        <columns>
+          <TableColumn fx:id="tblColNome" prefWidth="386.0" resizable="false" styleClass="..\styles\Principal.css" text="Nome" />
+          <TableColumn fx:id="tblColEpisodiosAssistidos" prefWidth="101.0" text="Ep. Assistido" />
+            <TableColumn fx:id="tblcolEpisodiosTotais" prefWidth="101.0" text="Ep. Total" />
+            <TableColumn fx:id="tblColStatus" prefWidth="212.0" text="Status" />
+        </columns>
+         <opaqueInsets>
+            <Insets right="7.0" />
+         </opaqueInsets>
+      </TableView>
+   </children>
+</AnchorPane>

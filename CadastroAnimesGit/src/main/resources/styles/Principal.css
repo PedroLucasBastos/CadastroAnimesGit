@@ -1,0 +1,45 @@
+    .mainFxmlClass {
+        -fx-background-color: #2A2E37;
+    }
+    
+    * {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #000000;
+    -fx-tertiary:  #1c2028;
+    }
+    .text-field
+    {
+        -fx-text-fill: #ffffff; /* Cor base das fontes em campos de texto*/
+    }
+    /* Configura as células do painel*/
+    .table-row-cell{
+    -fx-cell-size: 25px;/*Altura das linhas*/
+    -fx-background-color: -fx-primary;/*Cor da linha 1*/    
+    -fx-table-cell-border-color: black; /* Cor das bordas das coluna*/
+    
+    }.table-row-cell:even{
+        -fx-background-color: -fx-tertiary;/*Cor da linha 2*/
+    }
+    
+    /*Configura aspectos gerais da tabela*/
+    .table-view{
+    -fx-background-color: -fx-primary; /*Cor da tabela*/
+    -fx-font-size: 13px; /*Tamanho dos textos da tabela*/
+    -fx-border-color: -fx-secondary;
+    }
+    /*Configuração do cabeçalho*/
+    .table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+    .table-view .column-header{
+        -fx-background-color: derive(-fx-primary, 0%);/*Cor de fundo do cabeçalho*/
+        -fx-border-color: black;/*Cor da borda do cabeçalho*/
+        -fx-border-width: 1px 1px 1px 1px;/*Borda do cabeçalho*/    
+    }
+    .table-view .table-cell{
+    -fx-text-fill: white;
+    }
+    .table-row-cell:selected .table-cell{/*Cor da linha horizontal ao selecionar a celula*/
+        -fx-text-fill: #00ffb7;
+    }

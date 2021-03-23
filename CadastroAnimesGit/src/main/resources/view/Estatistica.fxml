@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1c2028;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EstatisticaController">
+   <children>
+      <Button fx:id="btnVoltar" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnVoltarOnAction" style="-fx-background-color: #808080;" text="Voltar" textFill="#f2f1f1" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <PieChart fx:id="pctEstatistica" layoutY="-1.0" prefHeight="400.0" prefWidth="551.0" title="Estatistica" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <ColorAdjust contrast="1.0" />
+         </effect></PieChart>
+   </children>
+</AnchorPane>
